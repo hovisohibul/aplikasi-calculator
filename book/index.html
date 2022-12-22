@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style/style.css">
+    <title>BOOK APPLICATION</title>
+</head>
+<body>
+
+
+    <header>
+        <h1>Book Shelf</h1>
+    </header>
+
+    <!-- main content -->
+    <main class="wrapper">
+
+        <!-- books input -->
+        <section class="container" id="input-book">
+            <h2>Masukan Buku Baru</h2>
+
+            <!-- form input -->
+            <form class="form" id="user-input-book">
+
+                <!-- title -->
+                <div class="input-content form-element">
+                    <label for="title">Judul</label>
+                    <input type="text" id="title" name="title" required>
+                </div>
+
+                <!-- writer -->
+                <div class="input-content form-element">
+                    <label for="writer">Penulis</label>
+                    <input type="text" id="writer" name="writer" required>
+                </div>
+
+                <!-- year -->
+                <div class="input-content form-element">
+                    <label for="year">Tahun</label>
+                    <input type="number" id="year" name="year" required>
+                </div>
+
+                <!-- checkbox -->
+                <div class="input-check">
+                    <label for="finish">Selesai Baca</label>
+                    <input type="checkbox" name="finish" id="finish">
+                </div>
+                <input type="submit" class="btn-submit" value="Add Book">
+            </form>
+        </section>
+
+        <!-- edit form -->
+        <section class="container" id="edit-book" hidden>
+            <h2>Edit Data Buku</h2>
+
+            <!-- form input -->
+            <form class="form" id="user-input-book">
+
+                <!-- title -->
+                <div class="input-content form-element">
+                    <label for="title">Judul</label>
+                    <input type="text" id="title" name="title" required>
+                </div>
+
+                <!-- writer -->
+                <div class="input-content form-element">
+                    <label for="writer">Penulis</label>
+                    <input type="text" id="writer" name="writer" required>
+                </div>
+
+                <!-- year -->
+                <div class="input-content form-element">
+                    <label for="year">Tahun</label>
+                    <input type="number" id="year" name="year" required>
+                </div>
+
+                <!-- checkbox -->
+                <div class="input-check">
+                    <label for="finish">Selesai Baca</label>
+                    <input type="checkbox" name="finish" id="finish">
+                </div>
+                <input type="submit" class="btn-submit" value="Add Book">
+            </form>
+        </section>
+
+        <!-- search book -->
+        <section class="container" id="search-book">
+            <h2>Cari Buku</h2>
+            <div class="list-item search-book" id="form-data-book">
+                <form id="search-data-book">
+                    <label for="search">Judul</label><br>
+                    <input type="search" id="search" name="search" class="search" placeholder="mencari judul buku apa?">
+                    <input type="button" class="search-button" id="search-data" value="Cari">
+                </form>
+            </div>
+        </section>
+
+        <!-- belum dibaca -->
+        <section class="container">
+            <h2>Belum Selesai Di Baca</h2>
+            <div class="list-item" id="book-uncomplete"></div>
+        </section>
+
+        <!-- selesai dibaca -->
+        <section class="container">
+            <h2>Selesai Di Baca</h2>
+            <div class="list-item" id="book-complete"></div>
+        </section>
+    </main>
+    
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

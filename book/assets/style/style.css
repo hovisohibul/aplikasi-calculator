@@ -1,0 +1,227 @@
+*{
+    box-sizing: border-box;
+}
+html,body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+body{
+    background: url('../books.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* head */
+header{
+    background: #0e5cec;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+h1{
+    color: #fff;
+}
+
+/* main content */
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container{
+    flex-grow: 1;
+    border-radius: 3px;
+    margin-top: 2%;
+    width: 1020px;
+    height: fit-content;
+    padding: 20px;
+    background: #8db1f5;
+    box-shadow: 2px 4px 7px 0 rgb(0, 0, 0);
+}
+h2{
+    text-align: center;
+}
+
+/* form input */
+.form{
+    display: flex;
+    flex-direction: column;
+    padding: 1.5em;
+    height: 500px;
+}
+.form-element{
+    display: flex;
+    flex-direction: column;
+}
+.input-content{
+    margin: auto 0;
+}
+.input-content label{
+    margin-bottom: 7px;
+    font-size: 18px;
+    font-weight: bold;
+}
+input[type=text], input[type=number]{
+    padding: 1.2em;
+    border: 2px solid #0372f1;
+    border-radius: 4px;
+    font-size: 20px;
+    margin-bottom: 4px;
+    box-sizing: border-box;
+}
+.input-check{
+    display: flex;
+    justify-content: flex-start;
+    padding: 12px;
+    margin-bottom: 1%;
+}
+.input-check label{
+    font-size: 18px;
+    font-weight: bold;
+}
+input[type=checkbox]{
+    width: 35px;
+}
+.btn-submit{
+    padding: 16px;
+    border: 2px solid #fff;
+    background: #0564d1;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+}
+.btn-submit:hover{
+    font-weight: bold;
+    background: #064d9e;
+}
+
+/* search */
+.search-book{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    height: fit-content;
+    box-sizing: border-box;
+}
+label[for=search]{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+input[type=search]{
+    padding: 1em;
+    border: 2px solid #0372f1;
+    border-radius: 4px;
+    font-size: 20px;
+    margin-bottom: 4px;
+    width: 690px;
+}
+input[type=button]{
+    padding: 20px;
+    width: 100px;
+    font-size: 18px;
+    background: #0564d1;
+    border: 2px solid #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #fff;
+}
+input[type=button]:hover{
+    font-weight: bold;
+    background: #064d9e;
+}
+
+
+/* uncomplete */
+.item{
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    margin-top: 15px;
+    border-radius: 4px;
+    background: #fff;
+    border: 2px solid #0372f1;
+}
+.item > .inner h2, .inner h3{
+    margin-bottom: unset;
+}
+.item > .inner p{
+    margin-top: 6px;
+}
+.check-button{
+    width: 95px;
+    height: 50px;
+    background-color: #15e95c;
+    cursor: pointer;
+    border: 2px solid #0372f1;
+    border-radius: 4px;
+    margin-left: 699px;
+    font-size: 16px;
+    color: #fff;
+}
+.check-button:hover{
+    font-weight: bold;
+    background-color: #22a34d;
+}
+
+/* complete */
+.delete-button{
+    width: 95px;
+    height: 50px;
+    background-color: #f31912;
+    cursor: pointer;
+    border: 2px solid #0372f1;
+    border-radius: 4px;
+    margin-left: auto;
+    font-size: 16px;
+    color: #fff;
+}
+.delete-button:hover{
+    font-weight: bold;
+    background-color: #8d1713;
+}
+.undo-button{
+    width: 95px;
+    height: 50px;
+    background-color: #3412f3;
+    cursor: pointer;
+    border: 2px solid #0372f1;
+    border-radius: 4px;
+    margin-left: 699px;
+    font-size: 16px;
+    color: #fff;
+}
+.undo-button:hover{
+    font-weight: bold;
+    background-color: #2a15a0;
+}
+
+@media screen and (max-width: 900px) {
+    .wrapper{
+        margin: 0;
+    }
+    .container{
+        width: 100%;
+    }
+    .form{
+        width: 100%;
+    }
+    .list-item{
+        width: 90%;
+    }
+    .input-button{
+        width: 100%;
+    }
+    .check-button{
+        margin-left: 220px;
+    }
+    .undo-button{
+        margin-left: auto;
+    }
+    input[type=search]{
+        width: fit-content;
+    }
+}
