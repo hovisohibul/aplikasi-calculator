@@ -1,0 +1,97 @@
+/* style calculator */
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+
+/* main calculator */
+
+/* container column */
+.flex-container-column{
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    margin: auto;
+    height: auto;
+    text-align: right;
+}
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    padding: 30px;
+    margin-top: 20px;
+}
+
+/* display number */
+.display{
+    background-color: #505372;
+    padding: 10px 20px;
+    width: 100%;
+    color: #fff;
+    border: 1px solid #000;
+    font-size: 2em;
+}
+
+/* container row */
+.flex-container-row{
+    display: flex;
+}
+.button{
+    flex-basis: 25%;
+    font-size: 1.5em;
+    text-align: center;
+    background: -webkit-linear-gradient(top, #b2b2b2, #999);
+    border: 1px solid #000;
+    padding: 40px;
+    cursor: pointer;
+}
+.double{
+    flex-basis: 50%;
+}
+.button:hover{
+    font-weight: bold;
+    color: #fff;
+    background: #333;
+}
+
+/* design operator */
+.negative, .operator, .clear, .equals{
+    background: #366630;
+    color: #dfc9c9;
+}
+
+/* table riwayat */
+.history{
+    max-width: 800px;
+    margin: 30px auto 0 auto;
+    overflow: scroll;
+}
+table{
+    border: 1px solid #000;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+th, td{
+    padding: 15px;
+    text-align: center;
+}
+th{
+    background-color: #eeb44a;
+    color: #fff;
+}
+td:nth-child(even){
+    background-color: #d2d2d2;
+}
+
+/* responsif to mobile */
+@media screen and (max-width: 900px) {
+    .button{
+        padding: 15px;
+    }
+    .history{
+        width: 100%;
+    }   
+}
